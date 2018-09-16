@@ -1,0 +1,355 @@
+\documentclass[10pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array, enumerate, gensymb}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+ 
+\title{Mathematics problems}
+\date{}
+\maketitle
+
+ \section{Elementary algebra}
+ 
+\begin{problem}{1.1}
+Simplify $$\frac{x^{n+2}}{x^{n-2}}$$
+\begin{enumerate}
+\item $\frac{x^{n+2}}{x^{n-2}} = x^{n+2-(n-2)}$
+\item Solution: $x^{n+2-(n-2)} = x^{4}$
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}{1.2}
+Solve for $x$:
+$$x^{-1}*8=2$$
+\begin{enumerate}
+\item $\frac{1}{x^{1}}*8 = 2$
+\item $\frac{1}{x} = \frac{2}{8}$
+\item $\frac{8}{2} = x$
+\item Solution: $x = 4$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{1.3}
+Calculate the missing value. If $a=5$ and $b=10$ then $(a^b)^0=\dots$
+
+\begin{enumerate}
+\item $(a^b)^0 = (5^{10})^0$
+\item Solution: $(5^{10})^0 = 1$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{1.4}
+Calculate
+$$\frac{\sqrt{4x}}{\sqrt{x}}$$
+
+\begin{enumerate}
+\item $\frac{\sqrt{4x}}{\sqrt{x}} = \frac{\sqrt{4}*\sqrt{x}}{\sqrt{x}}$
+\item $\frac{\sqrt{4}*\sqrt{x}}{\sqrt{x}} = \sqrt{4}$
+\item Solution: $\sqrt{4} = 2$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{1.5}
+Solve for $x$:
+$$x^2+(x+1)^2=(x+2)^2$$
+
+\begin{enumerate}
+\item identities: $(x+1)^2 = x^2+2x+1 and (x+2)^2 = x^2+4x+4$
+\item substituting: $x^2+x^2+2x+1 = x^2+4x+4$
+\item simplifying: $x^2-2x-3 = 0$
+\item reordering: $x(x-2) = 3$
+\item Solutions: $x=-1, x=3$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{1.6}
+Find the solution set for the inequality below:
+$$2^x>1024$$
+
+\begin{enumerate}
+\item take the log of both sides: $\log_{10}{2^x} > \log_{10}{1024}$
+\item use the log power identity: $x*log_{10}{2} > \log_{10}{1024}$
+\item re-arrange: $x > \frac{\log_{10}{1024}}{log_{10}{2}}$
+\item Solution: $x > 10$
+\end{enumerate}
+
+\end{problem}
+
+\section{Functions of one variable}
+
+\begin{problem}{2.1 (Based on SYD 2.5.6)}
+The relationship between temperatures measured in Celsius and Fahrenheit is linear. 0\degree C is equivalent to 32\degree F and 100\degree C is the same as 212\degree F.
+ Which temperature is measured by the same number on both scales?
+ 
+\begin{enumerate}
+\item Given that when it is 0\degree C, it is 32\degree F and 100\degree C when it is 212\degree F, we know the relationship between Celsius and Fahrenheit can be described in the form of F\degree = m*C\degree + b, with 'm' being the slope of the line and b 'the' y-intercept of the graphed line. 
+\item In this case, $m = \frac{(212 - 32)}{(100 - 0)} = \frac{18}{10}$ and $b = 32$. This gives us the formula $F\degree = \frac{18}{10}*C\degree + 32$
+\item Solving the above equation for when C\degree = F\degree, yields the following $C\degree = \frac{18}{10}*C\degree + 32$.
+\item Simplifying yields $-32 = \frac{8}{10}*C\degree$
+\item Solving for C\degree, C\degree = -40
+\item Solution: F\degree and C\degree are equal at -40\degree
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{2.2}
+Take the following function $f(x)=5x+4$. Find y if $f(3)=y$.
+
+\begin{enumerate}
+    \item $f(3)$ means the value of the function when $x = 3$. Therefore, $y = 5 * 3 + 4 = 19$
+    \item Solution: $y = 19$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{2.3}
+Find all values of x that satisfy:
+$$x^2-4x+3=0$$
+
+\begin{enumerate}
+    \item $x^2-4x+3=0$ is equivalent to $(x - 3)(x - 1) = 0$
+    \item Solution: This equation holds when $x = 3$ or $x = 1$;
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{2.4}
+Assume that you invest 10 HUF for 90 years with a yearly compound interest of 2\%. How much money do you receive 90 years later?
+
+\begin{enumerate}
+    \item For this we use the compounding interest formula. $A = P (1 + \frac{r}{n})^{nt}$
+    \item Substituting, we get $10 HUF * (1 + \frac{0.02}{1})^{1*90}$
+    \item Solution: This yields $10 HUF * (1.02)^{90} = 59.43 HUF$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{2.5}
+Calculate the following value
+$$e^{\ln 5}$$
+
+\begin{enumerate}
+\item If $e^x=a$ and by definition $x = ln(a)$, then $e^{ln(a)} = a$
+\item Solution: Therefore $e^{ln(5)} = 5$
+\end{enumerate}
+\end{problem}
+
+\section{Calculus}
+
+\begin{problem}{3.1}
+Calculate the following sum
+$$\sum\limits_{i=1}^{\infty} \frac{12}{6^i}$$
+
+\begin{enumerate}
+    \item The sum of an infinite geometric series follows the formula $\frac{a_1}{1-r}$ where $a_1$ is the first term of the series and r is the common ratio.
+    \item Solution: With $a = \frac{12}{6^1} = 2$ and $r = \frac{1}{6}$, $\sum\limits_{i=1}^{\infty} \frac{12}{6^i} = \frac{2}{1 - \frac{1}{6}} = \frac{2}{\frac{5}{6}} = 2*\frac{6}{5} = \frac{12}{5}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{3.2}
+Find the following limit
+$$\lim\limits_{x \rightarrow 1}\frac{6^{1-x}}{x}$$
+
+\begin{enumerate}
+    \item By identity, $\lim\limits_{x \rightarrow 1}\frac{6^{1-x}}{x}$ = $\frac{\lim\limits_{x \rightarrow 1}6^{1-x}}{\lim\limits_{x \rightarrow 1}x}$
+    \item $\lim\limits_{x \rightarrow 1}6^{1-x}$ = 1 and $\lim\limits_{x \rightarrow 1}x = 1$
+    \item Solution: Therefore, $\frac{\lim\limits_{x \rightarrow 1}6^{1-x}}{\lim\limits_{x \rightarrow 1}x} = \frac{1}{1} = 1$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{3.3}
+Find the slope of the function $f(x)=x^5-8$ at $x=-3$.
+
+\begin{enumerate}
+    \item The slope of the line at $x=-3$ can be found by taking the first derivative of the equation $f'(x)$ and finding $f'(-3)$
+    \item $f'(x) = \frac{\mathrm{d}}{\mathrm{d}\, x}(x^5 - 8) = \frac{\mathrm{d}}{\mathrm{d}\, x}(x^5) - \frac{\mathrm{d}}{\mathrm{d}\, x}8$
+    \item $\frac{\mathrm{d}}{\mathrm{d}\, x}(x^5) = 5x^4$ and $\frac{\mathrm{d}}{\mathrm{d}\, x}8 = 0$, meaning $f'(x) = 5x^4 - 0 = 5x^4$
+    \item Solution: $f'(-3) = 5(-3)^4 = 405$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{3.4}
+Find the following derivative
+$$\frac{\mathrm{d}}{\mathrm{d}\, x} \frac{x^3+2x-1}{x-2}$$
+
+\begin{enumerate}
+    \item Given the identity that $(\frac{f}{g})'=\frac{f'g-fg'}{g^2}$ where $f=x^3+2x-1$, $f'=3x^2+2$, $g=x-2$, $g'=1$
+    \item Solution: The derivative equals $\frac{(3x^2+2)(x-2)-(x^3+2x-1)(1)}{(x-2)^2} = \frac{
+3x^3 - 6x^2 + 2 x - 4 - x^3 - 2x + 1}{(x-2)^2} = \frac{2x^3 - 6x^2 - 3}{(x-2)^2}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{3.5}
+Find the following second derivative
+ $$\frac{\mathrm{d^2}}{\mathrm{d}\, x^2} 4x^4+4x^2$$
+ 
+ \begin{enumerate}
+     \item $f'(x) = \frac{\mathrm{d}}{\mathrm{d}\, x} 4x^4+4x^2 = 16x^3 + 8x$
+     \item Solution: The second derivative is $\frac{\mathrm{d}}{\mathrm{d}\, x}(16x^3 + 8x) = 48x^2+8$
+ \end{enumerate}
+\end{problem}
+
+\begin{problem}{3.6}
+Find the following derivative:
+$$\frac{\mathrm{d}}{\mathrm{d}\, x} \frac{\ln x}{e^x}$$
+
+\begin{enumerate}
+    \item Reorder the equation to the equivalent $e^{-x}*\ln x$.
+    \item Given the identity that $(fg)'= f'g+fg'$ where $f=\ln x$, $f'=\frac{1}{x}$, $g=e^{-x}$, $g'=-e^{-x}$
+    \item $f'(x) = \frac{e^{-x}}{x} + \ln x * -e^{-x} = \frac{e^{-x}}{x} - \ln x * e^{-x}$
+    \item Simplified, $\frac{e^{-x}(1 - x \ln x)}{x}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{3.7}
+Consider the following function. Find all of its stationary points and classify them as local minima, local maxima or inflection points. Also decide whether it is convex or concave. If it has one or more inflection points then define where it is locally concave or locally convex. (You should create a table like we did in class)
+$$f(x)=3x^2-5x+2$$
+
+\begin{enumerate}
+    \item $3x^2-5x+2 = (3x - 2)(x - 1)$
+    \item Inflection points occur where $f'(x) = 0$. $f'(x) = 6x - 5$ so there is one inflection point at $\frac{5}{6}$.
+    \item We look at the second derivative to establish concavity. $f''(x) = 6$, therefore the second derivative is always positive, making the graph "concave up".
+\end{enumerate}
+
+\begin{tabular}{lllll}
+\hline
+x         & $x<\frac{5}{6}$      & $\frac{5}{6}$    & $\frac{5}{6}<x$      &  \\ \hline
+\endfirsthead
+%
+\endhead
+%
+f(x)      & approaches $+\infty$ & $\frac{-1}{12}$  & approaches $+\infty$ &  \\
+f'(x)     & -                    & 0                & +                    &  \\
+slope     & decreasing           & global minimum   & increasing           &  \\
+f''(x)    & +                    & +                & +                    &  \\
+convexity & concave up           & inflection point & concave up           & 
+\end{tabular}
+
+\end{problem}
+
+\begin{problem}{3.8}
+Let $f(x,y)=x^2+y^3$. Calculate $f(2,3)$
+
+\begin{enumerate}
+    \item Solution: $f(2,3) = (2)^2 + (3)^3 = 31$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{3.9}
+Consider the following function: $f(x,y)=\ln(x-y)$. For what combinations of $x$ and $y$ is this function defined?
+
+\begin{enumerate}
+    \item Because the the limit of $\ln(a)$ is non-real for all a < 0, $\ln(x-y)$ is defined for all $(x-y) > 0$.
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}{3.10}
+Find the following partial derivative:
+$$\frac{\partial}{\partial \, x} x^5+xy^3$$
+
+\begin{enumerate}
+    \item Solution: Using the power rule, $\frac{\partial}{\partial \, x}(x,y) = 5x^4+y^3$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{3.11}
+Find the local maxima or minima of the following function:
+$$f(x,y)=x^2y^2+10$$
+
+\begin{enumerate}
+    \item We can find the inflection points by looking for points where $\frac{\partial}{\partial \, x} = 0$ and $\frac{\partial}{\partial \, y} = 0$
+    \item $\frac{\partial}{\partial \, x} = 2xy^2$ and $\frac{\partial}{\partial \, y} = 2x^2y$. Therefore there is a single inflection point for x at $x = 0$ and for y at $y = 0$.
+    \item The second partial derivative of x is $2y^2$ and the second partial derivative of y is $2x^2$. Since the second partial derivative is always positive, we know the graph is convex up.
+    \item Because the graph is convex up, we know the inflection points are also the global minimum at x=0, y=0.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{3.12}
+Solve the following constrained optimization problem using Lagrange's method:
+$\max x^2y^2$ s.t. $x+y=10$
+
+\begin{enumerate}
+    \item $L(x,y, \lambda) =  x^2y^2 - \lambda(x + y - 10)$
+    \item The partial derivative with respect to x is $0 = 2xy^2 - \lambda$
+    \item The partial derivative with respect to y is $0 = 2x^2y - \lambda$
+    \item The partial derivative with respect to $\lambda$ is $x + y = 10$
+    \item Solving the system of equations, we get $2xy^2 = 2x^2y$ and $x + y = 10$. Simplifying gets $2y = 2x$. We then substitute $x = 10 - y$ and $y = 10 - x$.
+    \item Solution: $x = 5$ and $y = 5$, where $f(x,y) = 625$
+    
+\end{enumerate}
+\end{problem}
+
+\section{Linear algebra}
+
+\begin{problem}{4.1}
+Take the following matrices:
+$$A=\begin{bmatrix} 2 & 6\\ 5 & 1 \\ 1 & 9\end{bmatrix}$$
+$$B=\begin{bmatrix} 1 & 1 & 7\\2 & 8 & 2\end{bmatrix}$$
+What is $A \cdot B$?
+
+\begin{enumerate}
+    \item $A \cdot B = \begin{bmatrix} 14 & 50 & 26\\7 & 13 & 37\\19 & 73 & 25\end{bmatrix}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{4.2}
+Take the following matrices:
+$$A=\begin{bmatrix} 2 & 2\\ 4 & 6 \\ 1 & 3\end{bmatrix}$$
+$$B=\begin{bmatrix} 1 & 9 & 1\\2 & 1 & 2\end{bmatrix}$$
+What is $B \cdot A$?
+
+\begin{enumerate}
+    \item $B \cdot A = \begin{bmatrix}39 & 59\\10 & 16\end{bmatrix}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{4.3}
+What is the transpose of the following matrix?
+$$\begin{bmatrix}7.1 & 9.1 & 4.7\\ 2 & 7.8 & 1.1 \\ 4 & 4.44 & 0\end{bmatrix}$$
+
+\begin{enumerate}
+    \item Solution: \begin{bmatrix}7.1 & 2 & 4\\9.1 & 7.8 & 4.44\\4.7 & 1.1 & 0\end{bmatrix}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{4.4}
+Calculate the determinant of
+$$\begin{bmatrix}1 & 9 \\ 2 & 8 \end{bmatrix} $$
+\begin{enumerate}
+    \item The determinant is $1 * 8 - 9 * 2 = 8 - 18 = -10$
+\end{enumerate}
+\end{problem}
+
+\section{Probability theory}
+
+\begin{problem}{5.1}
+You run an experiment where you throw a (regular, 6 sided) dice twice. The first number you get will be the first digit of a two-digit number, while the second number you get will be the second digit of the same two-digit number. What is the sample space of your experiment?
+
+\begin{enumerate}
+    \item Because a die can have a value of 1-6, the sample space can be described as 
+ S = \{ 11, 12, 13, 14, 15, 16, 21, 22, 23, 24, 25, 26, 31, 32, 33, 34, 35, 36, 41, 42, 43, 44, 45, 46, 51, 52, 53, 54, 55, 56, 61, 62, 63, 64, 65, 66 \}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{5.2}
+Assume that in a certain country 1\% of the population uses a certain drug. You have a way to test drug use, which will give you a positive result in 99\% of the cases where the individual is indeed a drug user and a negative result in 99.5\% of the cases where the individual doesn't use the drug. What is the probability that a randomly selected citizen will have a positive drug test?
+
+\begin{enumerate}
+    \item We want to find the probability that a random person tests positive. This can happen if they are a user and the test is positive and they aren't a user and get a false positive. To find the probability of a random citizen testing positive, we sum the probability of a citizen testing positive given they are a user and the probability of citizen falsely testing positive given they are not a user.
+    \item Solution: $.01 * .99 + .99 * .005 = 1.48\%$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{5.3}
+Assume that in a certain country 1\% of the population uses a certain drug. You have a way to test drug use, which will give you a positive result in 99\% of the cases where the individual is indeed a drug user and a negative result in 99.5\% of the cases where the individual doesn't use the drug. What is the probability that someone with a positive drug test is indeed a drug user?
+\begin{enumerate}
+\item We are looking for the probability that that a citizen tests positive minus the probability that it is a false positive. We use Bayes rule.
+\item We take the probability of a correct positive and divide it by the probability of a positive. 
+\item Solution: This yields $\frac{.01*.99}{.01 * .99 + .99 * .005} = 66.66\% a citizen who tests positive is actually a drug user$
+\end{enumerate}
+\end{problem}
+\end{document}
